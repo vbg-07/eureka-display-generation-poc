@@ -1,0 +1,38 @@
+[
+  {
+    "id": "face-out",
+    "name": "Face-out",
+    "category": "General",
+    "method": "2D_COMPOSITE",
+    "description": "Front-facing garment, basic crop and normalization."
+  },
+  {
+    "id": "spine",
+    "name": "Side / Spine-hung",
+    "category": "General",
+    "method": "THREE_JS_SHELL",
+    "description": "Garment mapped to a lens-shaped 3D shell."
+  },
+  {
+    "id": "yoke-fold",
+    "name": "Yoke-fold",
+    "category": "Ethnic",
+    "method": "THREE_JS_FOLD",
+    "description": "Garment wrapped over a soft 3D yoke fold geometry."
+  },
+  {
+    "id": "standard-fold",
+    "name": "Standard Fold",
+    "category": "General",
+    "method": "THREE_JS_FOLD",
+    "description": "Conventional compact folded garment presentation."
+  },
+  {
+    "id": "stack-fold",
+    "name": "Stacked Garments",
+    "category": "General",
+    "method": "THREE_JS_STACK",
+    "count": 5,
+    "description": "A neatly folded stack of multiple garments."
+  }
+]

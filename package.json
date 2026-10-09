@@ -1,0 +1,12 @@
+{
+  "name": "eureka-display-generation-poc",
+  "version": "1.0.0",
+  "description": "POC for Eureka's Product Display Generation Engine",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  }
+}

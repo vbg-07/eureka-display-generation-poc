@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eureka Display Generation POC</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eureka Display Generation Engine <small>(POC)</small></h1>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <div class="control-group">
+                <label for="image-upload">Upload Garment Image</label>
+                <input type="file" id="image-upload" accept="image/png, image/jpeg, image/webp">
+            </div>
+
+            <div class="control-group">
+                <label for="display-selector">Select Display Type</label>
+                <select id="display-selector">
+                    <option value="">-- Select a Display Type --</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button id="generate-btn" disabled>Generate Display</button>
+                <button id="export-btn" disabled>Export PNG</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+
+            <div id="status-message" class="hidden"></div>
+        </section>
+
+        <section class="preview-area">
+            <div class="preview-box">
+                <h3>Original Image</h3>
+                <div id="original-preview" class="canvas-container">
+                    <p class="placeholder">Upload an image to begin</p>
+                </div>
+                <div id="image-info" class="info-text"></div>
+            </div>
+            <div class="preview-box">
+                <h3>Generated Variant</h3>
+                <div id="generated-preview" class="canvas-container">
+                    <p class="placeholder">Select a display type and click generate</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
